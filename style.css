@@ -1,0 +1,737 @@
+/* shared styles here */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Anton', sans-serif; */
+}
+
+.primary {
+    color: deeppink;
+    font-family: fantasy;
+    ;
+}
+
+.primary2 {
+    background-image: linear-gradient(to bottom, blueviolet, deeppink);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: fantasy;
+}
+
+:root {
+    --primary-padding: 20px 120px;
+    --primary-padding2: 20px;
+}
+
+
+/* header section styles from here */
+
+/* navbar section styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--primary-padding);
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.nav-items ul {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.nav-items li {
+    list-style-type: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: black;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+/* banner-section styles from here */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--primary-padding);
+    box-shadow: 20px 2px 15px pink;
+    margin-bottom: 50px;
+}
+
+.banner-image img {
+    height: 450px;
+    width: 450px;
+    margin-bottom: -34px;
+}
+
+.banner-info h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.banner-info p {
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.banner-info button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title-style {
+    font-size: 3.5rem;
+    font-family: fantasy;
+    background-image: linear-gradient(to bottom, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sign-in-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: deeppink;
+    color: white;
+    border: none;
+}
+
+.go-rogue-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+}
+
+
+/* main section styles from here */
+/* online games section starts from here */
+.online-games-container {
+    padding: var(--primary-padding);
+}
+
+.games-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.games-content p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.games-content h1 {
+
+    font-family: fantasy;
+}
+
+.games-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards img {
+
+    width: 230px;
+    margin-bottom: 10px;
+    display: block;
+}
+.title img{
+    width:40px;
+    height:40px;
+    margin-left:100px;
+    margin-top:80px;
+}
+.title{
+    position:absolute;
+    background-color: rgb(0,0,0,0.6);
+    background-blend-mode: overlay;
+    bottom:65px;
+    padding:15px 0px;
+    border-radius: 10px;
+    width:230px;
+    height:240px;
+    opacity:0;
+}
+.title h2{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.cards {
+    width: 220px;
+    position:relative;
+}
+.cards:hover .title{
+    border:2px solid deeppink;
+    color:deeppink;
+    text-decoration: underline;
+    opacity:1;
+}
+
+
+
+/* play games section style from here */
+.play-games {
+    margin-top: 50px;
+    padding: var(--primary-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games-info {
+    width: 30%;
+    text-align: right;
+    padding-left: 120px;
+}
+
+.games-info h1 {
+    font-family: fantasy;
+    margin-bottom: 15px;
+}
+
+.games-info p {
+    padding: 5px;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.games-banner {}
+
+.games-banner .main-image {
+    width: 400px;
+    height: 400px;
+    padding-left: 250px;
+}
+
+.games-banner .primary-image {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    bottom: 160px;
+    left: 170px;
+}
+
+
+
+/* Other games section styles from here */
+.other-games-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.other-games {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    justify-content: center;
+}
+
+.other-games div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #F8F4EF;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.other-games img {
+    width: 40px;
+    height: 40px;
+}
+
+.other-games h2 {
+    font-size: 12px;
+}
+.other-games div{
+    border:2px solid transparent;
+}
+
+.other-games div:hover {
+    border: 2px solid deeppink;
+    color: deeppink;
+}
+
+
+
+
+/* footer section styles from here */
+.footer-container{
+    background-color: midnightblue;
+    margin-top:100px;
+}
+.footer-info {
+    width: 600px;
+    height: 500px;
+    margin:0 auto;
+    color: white;
+    cursor:pointer;
+    
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.about-us-contents ul {
+    display: flex;
+    padding-top:50px;
+}
+
+.about-us-contents li {
+    list-style-type: none;
+    padding: 15px;
+    font-family: cursive;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top:50px;
+}
+
+.social-links li {
+    list-style-type: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    
+}
+.policies ul{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    padding-top:20px;
+}
+.policies li{
+    list-style-type: none;
+    padding:10px;
+    font-size:0.8rem;
+    padding-top:50px;
+}
+.footer{
+    text-align: center;
+    margin-top:50px;
+    font-size:0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen styles from here */
+
+/* for mobile */
+@media screen and (max-width:576px) {
+
+    .navbar {
+        flex-direction: column;
+        box-shadow: none;
+        padding: var(--primary-padding);
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .nav-title {
+        font-size: 15px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: 8px;
+    }
+
+    .nav-items li {
+        margin-top: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        box-shadow: none;
+        gap: 50px;
+    }
+
+    .banner-image {
+        height: 80%;
+        width: 80%;
+    }
+
+    .banner-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-info {
+        font-size: 8px;
+        margin: 0 60px;
+    }
+
+    .title-style {
+        font-size: 2.2rem;
+        font-family: 'Anton', sans-serif;
+        color: RGB(239 101 223);
+    }
+
+    .sign-in-btn,
+    .go-rogue-btn {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+
+    .games-cards {
+        flex-direction: column;
+    }
+
+    .cards img {
+
+        width: 150px;
+    }
+
+    .cards {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .title img{
+        width:30px;
+        height:30px;
+        margin-left:60px;
+        margin-top:40px;
+    }
+    .title{
+        background-blend-mode: overlay;
+        bottom:62px;
+        width:147px;
+        height:145px;
+        opacity: 0;
+    }
+    .cards:hover .title{
+        border:2px solid deeppink;
+        color:deeppink;
+        text-decoration: underline;
+        opacity:1;
+    }
+
+    .games-content p {
+        font-size: 0.4rem;
+    }
+
+    .games-content h1 {
+
+        font-size: 10px;
+    }
+
+    .play-games {
+        flex-direction: column;
+        padding: var(--primary-padding2);
+        margin: 0px 170px 0 20px;
+    }
+
+    .games-info {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .games-info h1 {
+
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .games-info p {
+        padding: 0px;
+        font-size: 0.5rem;
+        color: gray;
+    }
+
+    .games-banner .main-image {
+        width: 160px;
+        height: 160px;
+        padding-left: 150px;
+    }
+
+    .games-banner .primary-image {
+        width: 60px;
+        height: 80px;
+        position: relative;
+        bottom: 60px;
+        left: 130px;
+    }
+
+    .other-games-container {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .other-games div {
+        gap: 5px;
+        padding: 5px 4px;
+        border-radius: 30px;
+        background-color: #F8F4EF;
+        margin-right: 8px;
+        margin-left: 3px;
+    }
+
+    .other-games img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .other-games h2 {
+        font-size: 4px;
+    }
+    
+    .footer-info {
+        width: 220px;
+        height:700px;
+        
+    }
+    .about-us-contents ul {
+        flex-wrap: wrap;
+    }
+    
+    .about-us-contents li {
+       font-size:0.6rem;
+    }
+    .social-links ul {
+       flex-wrap: wrap;
+       gap:40px;
+    }
+    .policies ul{
+        flex-wrap: wrap;
+    }
+    .policies li{
+        font-size: 0.6rem;
+    }
+   
+}
+
+
+/* for tablet  */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    
+    .navbar {
+        flex-direction: column;
+        box-shadow: none;
+        padding: var(--primary-padding);
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .nav-title {
+        font-size: 25px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .nav-items li {
+        margin-top: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        box-shadow: none;
+        gap: 100px;
+    }
+
+    .banner-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-info {
+        font-size: 20px;
+        margin: 0 60px;
+    }
+
+    .title-style {
+        font-size: 3.8rem;
+        font-family: 'Anton', sans-serif;
+        color: RGB(239 101 223);
+    }
+
+    .sign-in-btn,
+    .go-rogue-btn {
+        padding: 13px 20px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .games-cards {
+        flex-wrap: wrap;
+    }
+
+    .cards img {
+
+        width: 150px;
+    }
+    .title img{
+        width:30px;
+        height:30px;
+        margin-left:60px;
+        margin-top:40px;
+    }
+    .title{
+        background-blend-mode: overlay;
+        bottom:62px;
+        width:147px;
+        height:145px;
+        opacity: 0;
+    }
+    .cards:hover .title{
+        border:2px solid deeppink;
+        color:deeppink;
+        text-decoration: underline;
+        opacity:1;
+    }
+
+    .games-content p {
+        font-size: 1.2rem;
+    }
+
+    .games-content h1 {
+
+        font-size: 30px;
+    }
+
+    .play-games {
+        /* flex-direction: column; */
+        padding: var(--primary-padding2);
+        margin: 0px 170px 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .games-info {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .games-info h1 {
+
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .games-info p {
+        padding: 0px;
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    .games-banner .main-image {
+        width: 230px;
+        height: 250px;
+        padding-left: 150px;
+        margin-top:100px;
+    }
+
+    .games-banner .primary-image {
+        width: 80px;
+        height: 90px;
+        position: relative;
+        bottom: 60px;
+        left: 130px;
+    }
+
+    .other-games-container {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .other-games div {
+        gap: 5px;
+        padding: 5px 4px;
+        border-radius: 30px;
+        background-color: #F8F4EF;
+        margin-right: 8px;
+        margin-left: 3px;
+    }
+
+    .other-games img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .other-games h2 {
+        font-size: 15px;
+    }
+
+
+}
+
+
